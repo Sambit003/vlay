@@ -17,21 +17,8 @@ def index() -> pc.Component:
     return pc.fragment(
         pc.color_mode_button(pc.color_mode_icon(), float="right"),
         pc.vstack(
-            pc.heading("Welcome to Pynecone!", font_size="2em"),
-            pc.box("Get started by editing ", pc.code(filename, font_size="1em")),
-            pc.link(
-                "Check out our docs!",
-                href=docs_url,
-                border="0.1em solid",
-                padding="0.5em",
-                border_radius="0.5em",
-                _hover={
-                    "color": pc.color_mode_cond(
-                        light="rgb(107,99,246)",
-                        dark="rgb(179, 175, 255)",
-                    )
-                },
-            ),
+            pc.heading("Welcome to Vlay", font_size="2em"),
+            pc.box("Your very own streamming service.", font_size="1.5em"),
             spacing="1.5em",
             font_size="2em",
             padding_top="10%",
