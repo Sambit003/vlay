@@ -25,8 +25,23 @@ def index() -> pc.Component:
         ),
     )
 
+def about() -> pc.Component:
+    return pc.fragment(
+        pc.color_mode_button(pc.color_mode_icon(), float="right"),
+        pc.vstack(
+            pc.heading("About", font_size="2em"),
+            pc.box("This is a paragraph", font_size="1.5em"),
+            spacing="1.5em",
+            font_size="2em",
+            padding_top="10%",
+            padding_left="10%",
+            padding_right="10%",
+        ),
+    )
+
 
 # Add state and page to the app.
 app = pc.App(state=State)
 app.add_page(index)
+app.add_page(about)
 app.compile()
